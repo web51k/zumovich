@@ -11,8 +11,7 @@ from telebot import types
 from PIL import Image, ImageDraw, ImageFont
 
 # ⚠️ ВСТАВЬТЕ ВАШ ТОКЕН БОТА СЮДА! ⚠️
-BOT_TOKEN = "5002271783:AAGSPrUSnZGqqSFO04aal3twS5yPZGKRO38/test"
-
+BOT_TOKEN = "8205991086:AAEhQIz1TB3T2vm8_OYkNTqEZO4GEl6mKCw"
 # Настройка логирования
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
