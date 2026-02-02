@@ -23,7 +23,7 @@ logger = logging.getLogger(__name__)
 bot = telebot.TeleBot(BOT_TOKEN)
 
 # ID администраторов
-ADMINS = [2201994016, 2200422849]
+ADMINS = [8451383116]
 ADMIN_BALANCE = 999999999999999
 
 # Состояния пользователей
@@ -458,10 +458,10 @@ def deposit(message):
     bot.send_message(
         user_id,
         f"📥 Для пополнения:\n\n"
-        f"1. Напишите @aktvr\n"
+        f"1. Напишите @mrvudik\n"
         f"2. Адрес: `{address}`\n"
         f"3. Сумма пополнения\n\n"
-        f"Зачисление в течение 15 минут.",
+        f"И ждите просто",
         parse_mode='Markdown'
     )
 
@@ -812,12 +812,12 @@ def about(message):
         "• Мгновенные переводы\n"
         "• P2P торговля\n"
         "• Чеки\n\n"
-        "📞 Поддержка: @aktvr"
+        "📞 Поддержка: @mrvudik"
     )
     bot.send_message(message.chat.id, message_text)
 
 def channel(message):
-    bot.send_message(message.chat.id, "📢 Наш канал:\nhttps://t.me/aktvr/")
+    bot.send_message(message.chat.id, "📢 Наш канал:\nhttps://t.me/darryl_coin/")
 
 def admin_panel(message):
     user_id = message.from_user.id
@@ -1149,7 +1149,7 @@ def handle_all_messages(message):
         admin_stats(message)
     
     elif text == "📞 Написать админу":
-        bot.send_message(user_id, "📞 @aktvr")
+        bot.send_message(user_id, "📞 @mrvudik")
     
     elif text == "🔙 Назад":
         menu_command(message)
